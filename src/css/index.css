@@ -1,0 +1,91 @@
+.header{
+  margin: 20px;
+}
+
+.header--icon{
+  color: var(--brand-color);
+  font-size: 30px;
+}
+
+.header--icon__white{
+  color: white;
+  font-size: 200px;
+}
+
+.main--titles{
+  margin: 20px;
+  font-weight: 700;
+  width: 40%;
+}
+
+h1.titles--title{
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.main--button{
+  padding: 10px;
+  border: 0;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: 10px;
+  width: 300px;
+}
+
+.main--button__white{
+  border: 1px solid gray;
+  background: white;
+}
+
+.main--button__blue{
+  background: var(--brand-color);
+  color: white;
+}
+
+.main--button__white-blue{
+  color: var(--brand-color);
+}
+
+.main--division{
+  text-align: center;
+  width: 50%;
+}
+
+.main--text{
+  font-size: 10px;
+  width: 45%;
+  margin: 5px 20px 20px;
+}
+
+.text--link{
+  color: var(--brand-color);
+}
+
+.main--background{
+  width: 100%;
+  height: 60vh;
+  background-color: var(--brand-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  width: 100%;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.footer--list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer--list li{
+  margin: 5px 10px;
+}
+
+.footer--list li a{
+  color: #536471;
+}
+

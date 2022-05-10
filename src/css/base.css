@@ -1,0 +1,21 @@
+:root{
+  --brand-color: #1d9bf0;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
