@@ -4,36 +4,50 @@
 
 .header--icon{
   color: var(--brand-color);
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .header--icon__white{
   color: white;
-  font-size: 200px;
+  font-size: 20rem;
 }
 
 .main--titles{
-  margin: 20px;
+  margin: 20px 0;
   font-weight: 700;
-  width: 40%;
+  width: 80%;
+  max-width: 300px;
 }
 
 h1.titles--title{
-  font-size: 34px;
+  font-size: 3.4rem;
   margin-bottom: 15px;
+}
+
+.main--hero{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main--buttons{
+  width: 80%;
+  min-width: 300px;
 }
 
 .main--button{
   padding: 10px;
   border: 0;
   border-radius: 15px;
-  font-size: 18px;
-  margin: 10px;
-  width: 300px;
+  font-size: 1.8rem;
+  margin: 10px 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .main--button__white{
-  border: 1px solid gray;
+  border: 1px solid var(--gray-color);
   background: white;
 }
 
@@ -48,13 +62,22 @@ h1.titles--title{
 
 .main--division{
   text-align: center;
-  width: 50%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.main--division div{
+  width: 45%;
+  border-top: 1px solid var(--gray-color);
 }
 
 .main--text{
-  font-size: 10px;
-  width: 45%;
-  margin: 5px 20px 20px;
+  font-size: 1rem;
+  margin: 5px 0 20px;
 }
 
 .text--link{
@@ -64,7 +87,8 @@ h1.titles--title{
 .main--background{
   width: 100%;
   height: 60vh;
-  background-color: var(--brand-color);
+  background: url("https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +97,7 @@ h1.titles--title{
 .footer{
   width: 100%;
   padding: 20px;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .footer--list{
@@ -89,3 +113,45 @@ h1.titles--title{
   color: #536471;
 }
 
+@media screen and (min-width: 1024px) {
+  .helper{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .main{
+    display: flex;
+    align-items: center;
+  }
+
+  .main--background, .helper--content{
+    width: 50%;
+    height: 100%;
+  }
+
+  .main--button{
+    display: block;
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  h1.titles--title{
+    font-size: 5rem;
+  }
+
+  .main--division{
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .main--text{
+    width: 300px;
+  }
+
+  .footer{
+    height: 10vh;
+  }
+
+}
